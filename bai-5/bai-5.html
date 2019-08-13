@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let Star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe','Regulus'];
+    let Constellation = [ 'Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major' , 'Leo'];
+    function checkStar(nameStar){
+        for (let i =0;i<Star.length;i++){
+            if (nameStar == Star[i]){
+            alert(Constellation[i])
+                break;
+            }
+            else
+                alert("stupid");
+            break;
+        }
+    }
+    let nameStar1 = prompt("enter the name of star");
+    nameStar1 = checkStar(nameStar1)
+    alert(nameStar1);
+</script>
+</body>
+</html>
